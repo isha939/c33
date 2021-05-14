@@ -1,0 +1,48 @@
+ Resturant Example.
+ API is an application program interface; it is a kind of request or call.
+ 
+ Do all restaurants have the same menu card? 
+ Which is similar to JSON. JSON stands for JavaScript Object Notation. It is a format for storing data. Similar to our menu card which stores the data on it. 
+JSON object values are stored in the key and value format that is rendered inside the curly bracket. 
+
+Currently, the Angry Birds game takes place with a day background. 
+ 
+Let's get the time information. If it is daytime, we will keep a day time background. If it is night time, we will keep a night time background. 
+ 
+Let's use a simple API called WorldTimeAPI​, which returns the local-time for a given timezone. The response message will be in the format of JSON. 
+
+
+ A JSON structure can hold multiple values inside { }. Each value is indexed by a name.  
+ 
+For example, here the date and time value is indexed by the name "datetime". 
+
+The​ fetch() ​method accepts two parameters:
+ ● URL: ​It is the URL to which the request is to be made.
+ ● Options: ​It is an array of properties. It is an optional ​parameter. 
+ 
+ Making an API call involves some network requests and takes a little time. 
+ However, JavaScript executes this synchronously. It means that it executes one line after the other. 
+ 
+ It will not wait for the ‘fetch API call’ to be completed before moving to the next line. 
+ 
+However, we want it to wait for the API call to be completed. We do this by adding await before fetch(). It tells the computer to wait for the API call to be completed before moving to the next line. 
+ 
+Now, we have written an asynchronous function - a function that waits for some lines to be completed before jumping to the next line. 
+ 
+We must tell the computer that getTime()​ is an async function so that it knows what to do. In order to make getTime() as an async function, we have to give async keyword before the function. 
+ 
+ The response contains data. We need to extract the JSON response out of it. We’ll use the JSON() function to do this. 
+ 
+We can also log this on our console to see what it contains. 
+
+there is a lot of data available but which data do you need to change the background? 
+ 
+ did you find any key which contains the value for time? 
+ 
+Exactly! You can just log responseJSON.datetime​ to check the values. 
+ 
+ We need to use time data to change the background. 
+ datetime .
+ 
+ 
+ 
